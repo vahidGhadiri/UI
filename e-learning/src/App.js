@@ -1,10 +1,12 @@
 import React from "react"
+import {Navbar} from "./Components/index"
+
 
 const App = () => {
     return (
-        <div>
-            App Component
-        </div>
+        <>
+            <Navbar/>
+        </>
     )
 }
 

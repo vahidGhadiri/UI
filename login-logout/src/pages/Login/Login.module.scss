@@ -17,14 +17,18 @@
 }
 
 .formContainer {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 35vw;
+  height: 50vh;
   justify-content: center;
+  margin: auto;
 
   Input {
     margin-bottom: 3rem;
   }
+}
+
+.inputContainer {
+  margin: 6rem 0;
 }

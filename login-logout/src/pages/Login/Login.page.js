@@ -1,10 +1,16 @@
 import React from "react"
 
-const Login = () => {
+import {Container} from "./Login.style";
+import {Input} from "../../components";
+
+
+const Login = ({handleClick, handleChangeValue}) => {
     return (
-        <div>
-            Login Page
-        </div>
+        <Container>
+            <Input
+                onChange={(e) => handleChangeValue(e.target.value)}
+                onClick={() => handleClick()}/>
+        </Container>
     )
 }
 

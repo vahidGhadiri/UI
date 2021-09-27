@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+
+  input {
+    border: solid 1px #ccc;
+    display: block;
+    width: 30rem;
+    background: transparent;
+    transition: all .3s ease-in-out;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+    &:focus {
+      border-color: blue;
+
+      + label {
+        color: blue;
+      }
+    }
+
+    &:focus, &:valid {
+      + label {
+        font-size: 1.1rem;
+        top: -1rem;
+
+      }
+    }
+
+
+  }
+
+  label {
+    position: absolute;
+    color: #999;
+    cursor: text;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #fff;
+    padding: 0 1rem;
+    top: 1.5rem;
+    left: 1rem;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+  }
+}
+

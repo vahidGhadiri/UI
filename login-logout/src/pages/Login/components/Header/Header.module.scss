@@ -1,10 +1,18 @@
+@import "src/asset/styles/colors";
+
 .container {
   display: flex;
   flex-direction: column;
 }
 
 .title {
+  color: $title-color;
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: $text-color;
+  font-size: 1.5rem;
 }

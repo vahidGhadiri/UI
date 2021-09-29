@@ -1,17 +1,17 @@
 import React from "react"
 
-import {Input} from "../../components";
+import {Button, Input} from "../../components";
+import {Footer, Header} from "./components";
+
 import style from "./Login.module.scss"
 import image from '../../asset/images/image.jpg'
-import {Footer, Header} from "./components/index";
 
 
 const Login = ({handleClick, handleChangeValue}) => {
     return (
         <div className={style.container}>
-
             <div className={style.formContainer}>
-                <Header title="Welcome to our site"/>
+                <Header/>
                 <div className={style.inputContainer}>
                     <Input
                         onChange={(e) => handleChangeValue(e.target.value)}
@@ -24,6 +24,7 @@ const Login = ({handleClick, handleChangeValue}) => {
                         label="Password"
                         type="password"
                     />
+                    <Button/>
                 </div>
             </div>
             <div className={style.imageContainer}>

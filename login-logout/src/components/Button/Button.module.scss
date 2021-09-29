@@ -1,0 +1,20 @@
+@import "src/asset/styles/colors";
+
+.container {
+  button {
+    border: none;
+    outline: none;
+    background: none;
+    background: $primary-color;
+    color: $white-color;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    padding: 1.5rem 2.5rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+}

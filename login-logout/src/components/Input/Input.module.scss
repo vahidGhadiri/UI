@@ -1,3 +1,5 @@
+@import "src/asset/styles/colors";
+
 .container {
   position: relative;
 
@@ -11,10 +13,10 @@
     border-radius: .5rem;
 
     &:focus {
-      border-color: #9696ff;
+      border-color: $primary-color;
 
       + label {
-        color: #9696ff;
+        color: $primary-color;
       }
     }
 

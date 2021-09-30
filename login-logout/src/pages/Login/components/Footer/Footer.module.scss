@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: relative;
 
   p {
     color: $text-color;
@@ -35,5 +36,4 @@
       box-shadow: none;
     }
   }
-
 }

@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className={style.container}>
             <div className={style.title}>Welcome to our site</div>
-            <div className={style.subtitle}>it's just a begin...</div>
+            <div className={style.subtitle}>This is just the beginning...</div>
         </div>
     )
 }

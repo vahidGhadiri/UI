@@ -4,7 +4,7 @@ import {Button, Input} from "../../components";
 import {Footer, Header} from "./components";
 
 import style from "./Login.module.scss"
-import image from '../../asset/images/image.jpg'
+import image from '../../asset/images/image.gif'
 
 
 const Login = ({handleClick, handleChangeValue}) => {
@@ -24,13 +24,13 @@ const Login = ({handleClick, handleChangeValue}) => {
                         label="Password"
                         type="password"
                     />
-                    <Button/>
+                    <Button text="SIGN IN" disabled={true}/>
                 </div>
+                <Footer/>
             </div>
             <div className={style.imageContainer}>
                 <img src={image} alt=""/>
             </div>
-            <Footer/>
         </div>
     )
 }

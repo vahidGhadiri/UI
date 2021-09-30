@@ -1,0 +1,39 @@
+@import "src/asset/styles/colors";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  p {
+    color: $text-color;
+    font-size: 1.3rem;
+  }
+}
+
+.buttonContainer {
+
+  svg {
+    font-size: 2rem;
+    margin: 0 .5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white-color;
+      transform: translateY(-.2rem);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+
+}

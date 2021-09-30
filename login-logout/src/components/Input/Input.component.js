@@ -15,8 +15,8 @@ class Input extends React.Component {
     }
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {
-        const {mode: prevMode} = this.state
-        const {mode: nextMode} = nextState
+        // const {mode: prevMode} = this.state
+        // const {mode: nextMode} = nextState
 
         return true
     }

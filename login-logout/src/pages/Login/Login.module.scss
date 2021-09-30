@@ -5,10 +5,10 @@
 .imageContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
   width: 65vw;
-  background: #dcdefe;
+
 
   img {
     width: 100%;
@@ -25,7 +25,11 @@
   margin: auto;
 
   Input {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    margin-top: 1.5rem;
   }
 }
 

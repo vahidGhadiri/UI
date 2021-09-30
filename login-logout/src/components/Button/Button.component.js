@@ -3,20 +3,22 @@ import PropTypes from "prop-types"
 
 import style from "./Button.module.scss"
 
-const Button = ({text}) => {
+const Button = ({text, disabled}) => {
     return (
         <div className={style.container}>
-            <button>{text}</button>
+            <button disabled={disabled}>{text}</button>
         </div>
     )
 }
 
 Button.defaultProps = {
-    text: "SUBMIT"
+    text: "SUBMIT",
+    disabled: true
 }
 
 Button.propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string,
+    disabled: PropTypes.bool
 }
 
 export default Button
